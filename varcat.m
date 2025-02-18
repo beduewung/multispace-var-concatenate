@@ -43,7 +43,7 @@ for ii = 1:num
         if isempty(normfactor)
             combo{ii} = thisvar./mean(thisvar);
         else
-            combo{ii} = thisvar./normfactor(jj);
+            combo{ii} = thisvar./normfactor(ii);
         end
     else
         combo{ii} = thisvar;
